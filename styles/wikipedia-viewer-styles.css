@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #f6f6f6, grey);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+#title {
+  font-size: 5vw;
+  color: black;
+  text-shadow: 0.13vw -0.08vw white;
+  position: absolute;
+  margin-top: 1.5vw;
+  padding: 0;
+}
+
+#wikipedia-logo {
+  position: absolute;
+  margin-top: 9.5vw;
+  width: 12%;
+}
+
+#search-field {
+  position: absolute;
+  margin-top: 24vw;
+}
+
+#search-field img{
+  position: absolute;
+  margin-top: -0.15vw;
+  margin-left: 0.5vw;
+  width: 16.5%;
+}
+
+#search-field input {
+  width: 15vw;
+  height: 2vw;
+  border-radius: 0.8vw;
+  background: grey;
+  color: white;
+  padding-left: 1vw;
+  font-size: 1vw;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  
+}
+
+input::placeholder {
+  color: white;
+}
+
+#search-results-wrapper {
+  position: static;
+  font-size: 1vw;
+  margin-top: 31vw;
+  margin-left: 26vw;
+  margin-right: 26vw;
+}
+.hidden-elements {
+  visibility: hidden;
+}
+#search-results-wrapper div {
+  background: linear-gradient(180deg, #999, #ddd);
+  background-repeat: no-repeat;
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 0.8vw;
+  color: #888;
+  font-style: italic;
+}
+
+#first-result h3:first-child, #second-result h3:first-child, #third-result h3:first-child, #fourth-result h3:first-child, #fifth-result h3:first-child, #sixth-result h3:first-child {
+  margin-top: 0.5vw;
+  margin-bottom: 0;
+  font-size: 1.8vw;
+  font-style: normal !important;
+  text-shadow: 0.07vw 0.07vw grey;
+  color: #fff;
+}
+
+#sixth-result {
+  margin-top: 1vw;
+}
